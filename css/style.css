@@ -1,0 +1,219 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height:100vh;
+  min-height: 25rem;
+  overflow: scroll;
+  background-color: #222222;
+}
+
+.terminal{
+  position: relative;
+  margin:0.5rem 0;
+  padding: 0;
+  display: flex;
+}
+.textArea{
+  width: fit-content;
+  min-width: 15rem;
+  height:1.7rem;
+  margin: 0;
+  color:aqua;
+  caret-color:transparent;
+  text-shadow: 0 0 5px;
+  font-size: 1.4rem;
+  font-family: monospace;
+  text-decoration: none;
+  border: none;
+  /* border:2px solid red; */
+  outline:none;
+  /* background-color: blue; */
+  background-color: transparent;
+  flex-shrink: 8;
+  caret-shape: block;
+  position: relative;
+}
+ 
+#textArea::after{
+  text-decoration: none;
+  content: "";
+  width:0.8rem;
+  height:1.7rem;
+  background-color: aqua;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  margin-left: -0.09rem;
+  animation:blink 0.8s infinite;
+}
+@keyframes blink {
+0%{
+  opacity: 0;
+}
+50%{
+  opacity: 0.5;
+}
+100%{
+  opacity: 0.2;
+}
+  
+}
+#label{
+  font-family: monospace;
+  color:aqua;
+  font-size: 1.5rem;
+  text-shadow: 0 0 5px;
+  flex-shrink: 1;
+}
+
+ul,li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cmdList{
+  margin: 0;
+  padding: 0;
+  /* border:2px solid red; */
+  display: flex;
+  
+}
+.cmdList p{
+  font-size:1.5rem;
+  color: aqua;
+  text-shadow: 0 0 5px;
+  font-family: monospace;
+  margin:0;
+  padding:0;
+}
+.list{
+  background-color: #222222;
+}
+.wrongCmd{
+  color:red;
+  font-size: 1.2rem;
+  font-family: monospace;
+  text-shadow: 0 0 5px;
+  margin: 0;
+  padding:0 2rem; 
+  animation: typing 5s ease-out;
+}
+.result{
+  /* white-space: pre; */
+  width : fit-content;
+  /* border: 2px solid red; */
+  color:#00FF00;
+  font-size: 1.2rem;
+  font-family: monospace;
+  text-shadow: 0 0 5px;
+  margin: 0;
+  padding:0 2rem; 
+  overflow: hidden;
+  animation: typing 1s ease-in();
+}
+.row{
+  margin: 0.5rem 0;
+  display:flex;
+}
+.row p{
+  font-size:1.5rem;
+  color: aqua;
+  text-shadow: 0 0 5px;
+  font-family: monospace;
+  margin:0;
+  padding:0;
+}
+.alert
+  {
+  color:red;
+  font-size: 1.4rem;
+  font-family: monospace;
+  text-shadow: 0 0 5px;
+  margin: 0;
+  padding:0 2rem; 
+}
+.tittle{
+  font-family: monospace;
+  text-align: center;
+  font-size: 1.3rem;
+  color: aqua;
+  text-shadow: 0 0 5px;
+}
+.green{
+  color:#00FF00;
+}
+@keyframes typing {
+  from{
+  height: 0px;
+  transition: 2s;
+}
+to{
+  height: auto;
+}
+}
+.github_link{
+  text-align: center;
+  color:white;
+  border-radius: 0.54rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0.3rem 0.7rem;
+  background-color:rgb(255, 25, 25);
+  box-shadow: 0 0 2px rgb(255, 82, 82);
+}
+#suggestions{
+  color:rgb(181, 181, 181);
+  font-size: 1.4rem;
+  font-family: monospace;
+  position: absolute;
+  top: 0;
+  opacity: 0.4;
+  left: 1.82rem;
+}
+.asci-banner{
+  color: aqua;
+  text-align: center;
+  text-shadow: 0 0 6px;
+}
+.asci-name{
+  width: fit-content;
+  /* border: 2px solid red; */
+  display: flex;
+  margin:0rem 60%;
+  justify-content: space-between;
+  font-size: 3px;
+  color: rgb(0, 255, 65);
+  position: relative;
+}
+.asci-1{
+  font-size: 1rem;
+  color:rgb(255, 21, 21);
+  text-shadow: 0 0 10px;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  transform: translate(-50%,-50%);
+}
+.asci-2{
+  color: rgb(255, 25, 25);
+  margin-left:1.42rem;
+  text-shadow: 0 0 10px;
+}
+
+.back_video{
+  display: none;
+  position:fixed;
+  width: 100%;
+  height:100%;
+  /* border: 2px solid red; */
+  object-fit: cover;
+  top: 0;
+  right:0 ;
+  bottom: 0;
+  z-index: -1;
+}
