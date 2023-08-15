@@ -109,6 +109,7 @@ function output() {
       </div>
       <p class="result">Tonmoy
     <a class="github_link" target='blank' href='https://github.com/tonmoy998'>Github</a>
+    <a class="github_link" rel="me" href="https://mastodon.social/@TonmoyMojumder">Mastodon</a>
   </p>
 `
 
