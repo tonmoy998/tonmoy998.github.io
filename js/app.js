@@ -35,7 +35,7 @@ function output() {
         <p class="prevCmd">${inputValue}</p>
 
       </div>
-      <p class="result">visitor@cmd</p>
+      <p class="result">visitor@terminal</p>
 `
 
     textArea.textContent = ""
