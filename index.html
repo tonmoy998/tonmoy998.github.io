@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Terminal using Termux</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <!-- <ul class="list"> -->
+    <!--   <li class="cmd"> -->
+    <!--     <div class="cmdList"> -->
+    <!--       <p id="label">$:</p> -->
+    <!--       <p class="prevCmd">ls</p> -->
+    <!--     </div> -->
+    <!--     <p class="result">comand not found</p> -->
+    <!--   </li> -->
+    <!-- </ul> -->
+    <div class="banner">
+        <pre class="asci-banner">
+
+████████╗███████╗██████╗ ███╗   ███╗██╗███╗   ██╗ █████╗ ██╗     
+╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██║████╗  ██║██╔══██╗██║     
+   ██║   █████╗  ██████╔╝██╔████╔██║██║██╔██╗ ██║███████║██║     
+   ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║██║██║╚██╗██║██╔══██║██║     
+   ██║   ███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║██║  ██║███████╗
+   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝
+                  <div class="asci-name"> <span class="asci-1">by</span>              
+          <span class="asci-2">
+████████  ██████  ███    ██ ███    ███  ██████  ██    ██ 
+   ██    ██    ██ ████   ██ ████  ████ ██    ██  ██  ██  
+   ██    ██    ██ ██ ██  ██ ██ ████ ██ ██    ██   ████   
+   ██    ██    ██ ██  ██ ██ ██  ██  ██ ██    ██    ██    
+   ██     ██████  ██   ████ ██      ██  ██████     ██    
+            </span>  
+</div> 
+        </pre>
+      <h1 class="tittle">Welcome to terminal :).For available comands type <b class="green">"help"</b></h1>
+    </div>
+
+    <!-- Show output value -->
+    <div class="output">
+    </div>
+    <!-- CREATE TERMINAL -->
+    <div id="terminal" class="terminal">
+      <label for="textArea" id="label">$:</label>
+      <!-- <textarea row="1" name="" class="textArea" id="textArea"></textarea> -->
+      <div spellcheck="false" id="textArea" contenteditable="true" class="textArea"></div>
+      <div id="suggestions"></div>
+      <!-- <div class="customCaret"></div> -->
+    </div>
+  </div>
+    <video autoplay loop src="pexels_videos_2611250 (2160p).mp4" class="back_video">
+      
+    </video>
+  <script src="./js/app.js"></script>
+  <script src="./js/autocomple.js"></script>
+
+</body>
+
+</html>
