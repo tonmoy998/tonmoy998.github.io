@@ -1,64 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tonmoy998</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<head>
-  <title>Terminal using Javascript</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-  <div class="container">
-    <!-- <ul class="list"> -->
-    <!--   <li class="cmd"> -->
-    <!--     <div class="cmdList"> -->
-    <!--       <p id="label">$:</p> -->
-    <!--       <p class="prevCmd">ls</p> -->
-    <!--     </div> -->
-    <!--     <p class="result">comand not found</p> -->
-    <!--   </li> -->
-    <!-- </ul> -->
-    <div class="banner">
-        <pre class="asci-banner">
-
-████████╗███████╗██████╗ ███╗   ███╗██╗███╗   ██╗ █████╗ ██╗     
-╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██║████╗  ██║██╔══██╗██║     
-   ██║   █████╗  ██████╔╝██╔████╔██║██║██╔██╗ ██║███████║██║     
-   ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║██║██║╚██╗██║██╔══██║██║     
-   ██║   ███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║██║  ██║███████╗
-   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝
-                  <div class="asci-name"> <span class="asci-1">by</span>              
-          <span class="asci-2">
-████████  ██████  ███    ██ ███    ███  ██████  ██    ██ 
-   ██    ██    ██ ████   ██ ████  ████ ██    ██  ██  ██  
-   ██    ██    ██ ██ ██  ██ ██ ████ ██ ██    ██   ████   
-   ██    ██    ██ ██  ██ ██ ██  ██  ██ ██    ██    ██    
-   ██     ██████  ██   ████ ██      ██  ██████     ██    
-            </span>  
-</div> 
-        </pre>
-      <h1 class="tittle">Welcome to terminal :).For available comands type <b class="green">"help"</b></h1>
+  <body class="overflow-hidden h-100vh">
+    <!-- ########################################################################### -->
+    <!-- ###########################  Loader  ############################## -->
+    <!-- ########################################################################### -->
+    <div class="loader">
+      <div class="loader-text">
+        <span class="progress-text h1 anton-regular">100%</span>
+      </div>
+      <div class="progress">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </div>
+    <div class="container hero">
+      <div class="rect-rotate"></div>
+      <div class="squares"></div>
+      <div class="nav-pop-up">
+        <i class="fa-solid fa-exclamation"></i>
+        <h2 class="h5">Hello 👋</h2>
+        <p class="text text-sm">
+          Thanks for visiting my Portfolio website! If you like what you see and
+          you need me to work on a product, send me a message.
+        </p>
+      </div>
+      <div class="column">
+        <div class="col-md-2 bg-secondary">
+          <nav class="">
+            <a href="" class="logo anton-regular text-primary">M </a>
+            <ul class="nav-links">
+              <li class="nav-link">Contact</li>
+              <li class="nav-link">About</li>
+              <li class="nav-link">Projects</li>
+            </ul>
+            <a
+              target="_blank"
+              href="https://github.com/tonmoy998"
+              class="github-link"
+            >
+              <i class="fa-brands fa-github text-primary"></i>
+            </a>
+          </nav>
+        </div>
+        <div class="col-md-6 v-center">
+          <div class="col-xl-12 hero-intro">
+            <h1 class="h1 hero-title">
+              Hi,I'm Tonmoy<span class="text-primary">.</span>
+            </h1>
+            <h6 class="h4">
+              I am a
+              <span class="text-primary poppins-medium"
+                >full stack developer.</span
+              >
+            </h6>
+            <p class="text poppins-regular">
+              Passionate about Linux and open-source technologies, I immerse
+              myself in the world of command-line interfaces, scripting, and
+              system administration, finding joy in the endless possibilities
+              for customization and optimization.
+            </p>
+            <button class="btn btn-primary text-white mt-2">Contact me!</button>
+          </div>
+        </div>
+        <div class="col-md-4 v-center">
+          <div class="grid"></div>
+        </div>
+      </div>
     </div>
 
-    <!-- Show output value -->
-    <div class="output">
-    </div>
-    <!-- CREATE TERMINAL -->
-    <div id="terminal" class="terminal">
-      <label for="textArea" id="label">$:</label>
-      <!-- <textarea row="1" name="" class="textArea" id="textArea"></textarea> -->
-      <div spellcheck="false" id="textArea" contenteditable="true" class="textArea"></div>
-      <div id="suggestions"></div>
-      <!-- <div class="customCaret"></div> -->
-    </div>
-  </div>
-    <video autoplay loop src="pexels_videos_2611250 (2160p).mp4" class="back_video">
-      
-    </video>
-  <script src="./js/app.js"></script>
-  <script src="./js/autocomple.js"></script>
-
-</body>
-
+    <!-- ########################################################################### -->
+    <!-- ###########################  Contact  ############################## -->
+    <!-- ########################################################################### -->
+    <section class="contact">
+      <img src="./assets/img/qin-final.jpg" alt="" class="contact-bg" />
+      <div class="container">
+        <div class="contact-header">
+          <p class="text text-gradient">_contact me</p>
+          <h1 class="h1">
+            🚀<span class="text-gradient">Let's collaborate</span>
+          </h1>
+        </div>
+        <div class="terminal-box">
+          <div class="terminal">
+            <div class="terminal-header">
+              <div class="menu-icons">
+                <div class="menu-icon bg-red"></div>
+                <div class="menu-icon bg-green"></div>
+                <div class="menu-icon bg-primary"></div>
+              </div>
+              <p class="text">contact@mote.com</p>
+            </div>
+            <form class="terminal-form">
+              <p class="text px-1">
+                Got a question, proposal or project or want to work together on
+                something? Feel free to reach out.
+              </p>
+              <p class="text px-1">
+                To start , could you give us
+                <span class="text-green">your email?</span>
+              </p>
+              <div class="terminal-row">
+                <div class="zsh-icons">
+                  <i class="fa-solid fa-arrow-right text-green"></i>
+                </div>
+                <div class="terminal-user-input">
+                  <p class="text">Enter email :</p>
+                  <input
+                    class="terminal-input text-green"
+                    id="email"
+                    type="email"
+                    name="email"
+                  />
+                </div>
+              </div>
+              <div id="emailResponse"></div>
+              <div id="askName"></div>
+              <div id="nameBox"></div>
+              <div id="nameResponse"></div>
+              <div id="askMessage"></div>
+              <div id="messageBox"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="app.js"></script>
+    <script src="terminal.js"></script>
+  </body>
 </html>

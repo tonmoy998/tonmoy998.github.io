@@ -1,0 +1,137 @@
+@import "variables.scss";
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  background-color: #0e0425;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  color: #fff;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-sm {
+  font-size: 0.7em;
+  line-height: 1.6em;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border: 0;
+  outline: 0;
+  border-radius: 0.4rem;
+  padding: 0.9rem 1.5rem;
+  color: #fff;
+  padding: 1rem 1.4rem;
+  font-size: 1.5em;
+  box-shadow: 0 0 2px rgba(142, 178, 238, 0.6);
+  font-weight: 500;
+  &:hover {
+    background-color: rgb(100, 150, 220);
+  }
+}
+
+.text-gradient {
+  background-image: linear-gradient(to top, rgb(164, 72, 237), #00ffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.bg-primary {
+  background-color: $primary;
+}
+.bg-secondary {
+  background-color: $secondary;
+}
+.h-certer {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.w-fit {
+  width: fit-content;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.mt-4 {
+  margin-top: 4rem;
+}
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.h5 {
+  font-size: 1.5em;
+}
+.text-primary {
+  color: $primary;
+}
+.vh-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bg-red {
+  background-color: rgb(251, 54, 48);
+}
+.bg-blue {
+  background-color: rgb(38, 191, 240);
+}
+.text-blue {
+  color: rgb(38, 191, 240);
+}
+.text-green {
+  color: rgb(32, 216, 113);
+}
+
+.bg-green {
+  background-color: rgb(32, 216, 113);
+}

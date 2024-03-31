@@ -1,0 +1,174 @@
+.contact {
+  color: white;
+  min-height: 100vh;
+  position: relative;
+}
+.contact .contact-bg {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.contact .container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.contact .container .contact-header {
+  position: absolute;
+  top: 5rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.contact .container .contact-header .text {
+  float: right;
+  font-size: 1.5em;
+  margin: 0;
+}
+.contact .container .contact-header .h1 {
+  margin: 0;
+  font-size: 3em;
+  float: right;
+}
+.contact .container .terminal-box {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 100%;
+  max-width: 45rem;
+  height: 28rem;
+  box-shadow: 1px 2px 2px rgba(173, 173, 173, 0.6);
+  overflow-y: scroll;
+  backdrop-filter: blur(40px);
+}
+.contact .container .terminal-box .terminal {
+  font-weight: 500;
+  height: 100%;
+}
+.contact .container .terminal-box .terminal .btn-send {
+  background-color: rgb(28, 212, 25);
+  box-shadow: 0 0 4px rgba(173, 173, 173, 0.6);
+  color: rgba(255, 255, 255, 0.8);
+  outline: 0;
+  border: 0;
+  padding: 0.3rem 0.8rem;
+  font-size: 1em;
+  position: relative;
+  display: flex;
+  margin: 0.5rem auto;
+}
+.contact .container .terminal-box .terminal .message {
+  padding: 0;
+  height: fit-content;
+  position: relative;
+  align-items: start;
+  display: flex;
+  align-items: start;
+}
+.contact .container .terminal-box .terminal .message .terminal-user-input {
+  margin-left: 0.2rem;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.contact .container .terminal-box .terminal .message .terminal-user-input .text {
+  margin-top: 0;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0 0.2rem;
+  transition: color 1.2s ease-in-out;
+}
+.contact .container .terminal-box .terminal .message .terminal-user-input textarea {
+  position: relative;
+  width: 25rem;
+  margin-left: 0.35rem;
+  font-size: 1.1rem;
+  padding-left: 0.4rem;
+  font-weight: 500;
+  border: 0;
+  outline: 0;
+  background-color: rgba(100, 100, 100, 0.4);
+}
+.contact .container .terminal-box .terminal .message .terminal-user-input textarea:focus {
+  background-color: transparent;
+}
+.contact .container .terminal-box .terminal #emailResponse {
+  overflow: hidden;
+  margin: 0;
+  height: fit-content;
+}
+.contact .container .terminal-box .terminal .terminal-row {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 2rem;
+}
+.contact .container .terminal-box .terminal .terminal-row .terminal-response {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.contact .container .terminal-box .terminal .terminal-row .terminal-response i {
+  font-size: 1.2em;
+  padding-left: 0.5rem;
+}
+.contact .container .terminal-box .terminal .terminal-row .terminal-response .text {
+  padding-left: 0.5rem;
+}
+.contact .container .terminal-box .terminal .terminal-row .terminal-user-input {
+  margin-left: 0.2rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.contact .container .terminal-box .terminal .terminal-row .terminal-user-input .text {
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0 0.2rem;
+}
+.contact .container .terminal-box .terminal .terminal-row .terminal-user-input input {
+  width: 25rem;
+  margin-left: 0.35rem;
+  height: 1.5rem;
+  font-size: 1.1em;
+  padding-left: 0.4rem;
+  font-weight: 500;
+  border: 0;
+  outline: 0;
+  background-color: rgba(100, 100, 100, 0.4);
+}
+.contact .container .terminal-box .terminal .terminal-row .terminal-user-input input:focus {
+  background-color: transparent;
+}
+.contact .container .terminal-box .terminal .terminal-header {
+  margin-top: 0;
+  position: relative;
+  box-sizing: border-box;
+  height: 2rem;
+  background-color: rgb(57, 72, 83);
+}
+.contact .container .terminal-box .terminal .terminal-header .text {
+  margin: 0;
+  color: #eee;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact .container .terminal-box .terminal .terminal-header .menu-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.4rem 0.8rem;
+}
+.contact .container .terminal-box .terminal .terminal-header .menu-icons .menu-icon {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0.1rem;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=contact.css.map */
