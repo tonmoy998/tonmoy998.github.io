@@ -58,7 +58,7 @@ a {
   padding: 1rem 1.4rem;
   font-size: 1.5em;
   box-shadow: 0 0 2px rgba(142, 178, 238, 0.6);
-  font-weight: 500;
+  font-weight: 550;
   &:hover {
     background-color: rgb(100, 150, 220);
   }
@@ -140,5 +140,15 @@ a {
     font-size: 1rem;
     padding: 0.8rem 1.2rem;
     letter-spacing: 2px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .btn-primary {
+    font-size: 0.69rem;
+    padding: 0.6rem 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 4px;
   }
 }
