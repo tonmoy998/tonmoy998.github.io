@@ -81,7 +81,7 @@ email.addEventListener("keydown", (e) => {
         `;
         const sendBtn = document.createElement("button");
         sendBtn.textContent = "sendi it";
-        sendBtn.classList.add("btn-send");
+        sendBtn.classList.add("btn-send", "bg-green");
         terminal.append(sendBtn);
       }
     });

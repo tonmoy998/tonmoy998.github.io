@@ -50,9 +50,11 @@
         height: 100%;
         // border: 2px solid pink;
         .btn-send {
-          background-color: rgb(28, 212, 25);
+          // background-color: rgb(28, 212, 25);
           box-shadow: 0 0 4px rgba(173, 173, 173, 0.6);
-          color: rgba(255, 255, 255, 0.8);
+          color: rgb(74, 70, 70);
+          font-weight: 500 !important;
+          text-transform: capitalize;
           outline: 0;
           border: 0;
           padding: 0.3rem 0.8rem;
@@ -173,6 +175,113 @@
               height: 0.8rem;
               margin: 0.1rem;
               border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    // border: 2px solid;
+    .container {
+      .contact-header {
+        margin: 0;
+        top: 2rem;
+        right: 1rem;
+        backdrop-filter: blur(40px);
+        padding: 0.5rem 1rem;
+        .text {
+          font-size: 1.3rem;
+          font-weight: bold;
+        }
+        .h1 {
+          font-weight: bold;
+          font-size: 2rem;
+        }
+      }
+      .terminal-box {
+        max-width: 27rem;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .terminal {
+          .text {
+            font-size: 0.85rem;
+          }
+          form {
+            input,
+            textarea {
+              max-width: 18rem;
+              font-size: 1rem !important;
+            }
+            textarea {
+              font-size: 0.9rem;
+            }
+          }
+          .terminal-header {
+            .menu-icon {
+              width: 0.3rem;
+              height: 0.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contact {
+    padding: 0;
+    margin: 0;
+    border: 2px solid;
+    .container {
+      position: relative;
+      box-sizing: border-box;
+      border: 2px solid;
+      padding: 0;
+      .contact-header {
+        position: relative;
+        width: fit-content;
+        margin-left: 1rem;
+        backdrop-filter: blur(40px);
+        padding: 0.5rem 1rem;
+        .text {
+          font-size: 1rem;
+          font-weight: bold;
+        }
+        .h1 {
+          font-weight: bold;
+          font-size: 1.7rem;
+        }
+      }
+      .terminal-box {
+        position: absolute;
+        width: 90%;
+        margin: 1rem auto;
+        top: 60%;
+        .terminal {
+          position: relative;
+          margin: 0;
+          .text {
+            font-size: 0.8rem;
+          }
+          form {
+            input,
+            textarea {
+              max-width: 14rem;
+              font-size: 0.8rem !important;
+            }
+            textarea {
+              font-size: 0.9rem;
+            }
+          }
+          .terminal-header {
+            .menu-icon {
+              width: 0.3rem;
+              height: 0.3rem;
             }
           }
         }

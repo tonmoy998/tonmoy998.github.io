@@ -39,7 +39,7 @@
   width: 9rem;
   height: fit-content;
   padding: 1rem 2rem;
-  z-index: 999999;
+  z-index: 99999;
   background: linear-gradient(230deg, rgb(120, 153, 220), rgb(120, 153, 204), rgb(120, 153, 220));
   border-radius: 12px;
   clip-path: circle(13% at 82% 14%);
@@ -178,6 +178,231 @@
   background: linear-gradient(to bottom, #16063b, rgb(120, 153, 204), rgb(120, 153, 204));
   box-shadow: 1px 2px 3px #0f0429;
   padding: 0.32rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    position: relative;
+    overflow: hidden;
+  }
+  .hero .rect-rotate {
+    left: 80%;
+  }
+  .hero .nav-pop-up {
+    padding: 1rem;
+    top: 10%;
+    right: 5%;
+    clip-path: circle(10% at 88% 12%);
+  }
+  .hero .nav-pop-up i {
+    font-size: 1.1rem;
+    top: -5%;
+    right: 3%;
+  }
+  .hero .nav-pop-up .h5 {
+    font-size: 1.3rem;
+  }
+  .hero .nav-pop-up .text {
+    font-size: 0.8rem;
+  }
+  .hero .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero .squares {
+    z-index: 10;
+  }
+  .hero .col-md-2 {
+    margin: 0;
+    width: 4rem;
+    width: 100%;
+    height: 4rem;
+  }
+  .hero .col-md-2 .logo {
+    font-size: 1.8em !important;
+  }
+  .hero .col-md-2 nav {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(33, 35, 90);
+  }
+  .hero .col-md-2 nav .nav-links {
+    display: flex;
+    flex-direction: row;
+    transform: rotate(0);
+  }
+  .hero .col-md-2 nav .nav-link {
+    writing-mode: horizontal-tb !important;
+    width: fit-content;
+    height: auto;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    word-spacing: 4px;
+    padding: 0 !important;
+  }
+  .hero .col-md-2 nav .github-link {
+    font-size: 1.8em;
+    padding: 0 0.8rem;
+  }
+  .hero .col-md-6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding: 0 1rem;
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem 1rem;
+  }
+  .hero .col-md-6 .hero-intro {
+    padding: 1rem;
+  }
+  .hero .col-md-6 .hero-title {
+    font-size: 3em;
+  }
+  .hero .col-md-6 .h4 {
+    font-size: 1.5em;
+  }
+  .hero .col-md-6 .text {
+    font-size: 1em;
+    line-height: 1.4rem;
+  }
+  .hero .col-md-4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+  .hero .col-md-4 .grid {
+    opacity: 0.5;
+    margin: 0;
+  }
+  .hero .col-md-4 .grid .gridBox {
+    padding: 0.4rem;
+  }
+  .hero .col-md-4 .grid .dot-point {
+    width: 0.01rem;
+    height: 0.01rem;
+    padding: 0.25rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero {
+    position: relative;
+    overflow: hidden;
+  }
+  .hero .rect-rotate {
+    left: 80%;
+  }
+  .hero .nav-pop-up {
+    padding: 1rem;
+    top: 10%;
+    right: 5%;
+    clip-path: circle(10% at 88% 12%);
+  }
+  .hero .nav-pop-up i {
+    font-size: 1.1rem;
+    top: -5%;
+    right: 3%;
+  }
+  .hero .nav-pop-up .h5 {
+    font-size: 1.3rem;
+  }
+  .hero .nav-pop-up .text {
+    font-size: 0.8rem;
+  }
+  .hero .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero .squares {
+    z-index: 10;
+  }
+  .hero .col-md-2 {
+    margin: 0;
+    width: 4rem;
+    overflow: hidden;
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(33, 35, 90);
+  }
+  .hero .col-md-2 .logo {
+    font-size: 1.4em !important;
+  }
+  .hero .col-md-2 nav {
+    max-width: 90% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: row;
+  }
+  .hero .col-md-2 nav .nav-links {
+    max-width: fit-content;
+    padding: 0 !important;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    transform: rotate(0);
+  }
+  .hero .col-md-2 nav .nav-link {
+    writing-mode: horizontal-tb !important;
+    width: fit-content !important;
+    height: auto;
+    margin: 0 !important;
+    font-size: 0.85rem !important;
+    line-height: 1.8rem;
+    word-spacing: 4px;
+    padding: 0.2rem 0.25rem !important;
+  }
+  .hero .col-md-2 nav .github-link {
+    margin-right: 5%;
+    font-size: 1.5em;
+    padding: 0 0.4rem;
+  }
+  .hero .col-md-6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding: 0 1rem;
+    width: 90% !important;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+  }
+  .hero .col-md-6 .hero-intro {
+    padding: 0.8rem;
+  }
+  .hero .col-md-6 .hero-title {
+    font-size: 2.7em;
+  }
+  .hero .col-md-6 .h4 {
+    font-size: 1.3em;
+  }
+  .hero .col-md-6 .text {
+    font-size: 0.85em;
+    line-height: 1.3rem;
+  }
+  .hero .col-md-4 {
+    max-width: 100% !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+  .hero .col-md-4 .grid {
+    opacity: 0.5;
+    margin: 0;
+  }
+  .hero .col-md-4 .grid .gridBox {
+    padding: 0.3rem;
+  }
+  .hero .col-md-4 .grid .dot-point {
+    padding: 0.25rem;
+  }
 }
 
 /*# sourceMappingURL=hero.css.map */

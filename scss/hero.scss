@@ -48,7 +48,7 @@
     width: 9rem;
     height: fit-content;
     padding: 1rem 2rem;
-    z-index: 999999;
+    z-index: 99999;
     background: linear-gradient(
       230deg,
       rgba(120, 153, 220, 100),
@@ -214,6 +214,245 @@
       );
       box-shadow: 1px 2px 3px #0f0429;
       padding: 0.32rem;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hero {
+    position: relative;
+    // border: 2px solid;
+    overflow: hidden;
+    .rect-rotate {
+      left: 80%;
+    }
+    .nav-pop-up {
+      padding: 1rem;
+      top: 10%;
+      right: 5%;
+      clip-path: circle(10% at 88% 12%);
+      i {
+        font-size: 1.1rem;
+        top: -5%;
+        right: 3%;
+      }
+      .h5 {
+        font-size: 1.3rem;
+      }
+      .text {
+        font-size: 0.8rem;
+      }
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
+    .squares {
+      z-index: 10;
+    }
+    .col-md-2 {
+      margin: 0;
+      width: 4rem;
+      // border: 2px solid;
+      width: 100%;
+      height: 4rem;
+      .logo {
+        font-size: 1.8em !important;
+      }
+      nav {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(33, 35, 90);
+        .nav-links {
+          // border: 2px solid;
+          display: flex;
+          flex-direction: row;
+          transform: rotate(0);
+        }
+        .nav-link {
+          writing-mode: horizontal-tb !important;
+          width: fit-content;
+          height: auto;
+          // border: 2px solid;
+          font-size: 1rem;
+          line-height: 1.8rem;
+          word-spacing: 4px;
+          padding: 0 !important;
+        }
+        .github-link {
+          font-size: 1.8em;
+          padding: 0 0.8rem;
+        }
+      }
+    }
+    .col-md-6 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      padding: 0 1rem;
+      width: 100%;
+      // border: 2px solid;
+      margin: 0;
+      padding: 0.5rem 1rem;
+      .hero-intro {
+        padding: 1rem;
+      }
+      .hero-title {
+        font-size: 3em;
+      }
+      .h4 {
+        font-size: 1.5em;
+      }
+      .text {
+        font-size: 1em;
+        line-height: 1.4rem;
+      }
+    }
+    .col-md-4 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      // border: 2px solid;
+      .grid {
+        opacity: 0.5;
+        // max-width: 100%;
+        .gridBox {
+          padding: 0.4rem;
+        }
+        margin: 0;
+        .dot-point {
+          width: 0.01rem;
+          height: 0.01rem;
+          padding: 0.25rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero {
+    position: relative;
+    // border: 2px solid;
+    overflow: hidden;
+    .rect-rotate {
+      left: 80%;
+    }
+    .nav-pop-up {
+      padding: 1rem;
+      top: 10%;
+      right: 5%;
+      clip-path: circle(10% at 88% 12%);
+      i {
+        font-size: 1.1rem;
+        top: -5%;
+        right: 3%;
+      }
+      .h5 {
+        font-size: 1.3rem;
+      }
+      .text {
+        font-size: 0.8rem;
+      }
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
+    .squares {
+      z-index: 10;
+    }
+    .col-md-2 {
+      margin: 0;
+      width: 4rem;
+      overflow: hidden;
+      // border: 2px solid;
+      width: 100%;
+      height: 4rem;
+      background-color: rgb(33, 35, 90);
+      .logo {
+        font-size: 1.4em !important;
+      }
+      nav {
+        max-width: 90% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        // border: 2px solid;
+        display: flex;
+        flex-direction: row;
+        .nav-links {
+          max-width: fit-content;
+          padding: 0 !important;
+          margin: 0;
+          // border: 2px solid;
+          display: flex;
+          flex-direction: row;
+          transform: rotate(0);
+        }
+        .nav-link {
+          writing-mode: horizontal-tb !important;
+          width: fit-content !important;
+          height: auto;
+          // border: 2px solid;
+          margin: 0 !important;
+          font-size: 0.85rem !important;
+          line-height: 1.8rem;
+          word-spacing: 4px;
+          padding: 0.2rem 0.25rem !important;
+        }
+        .github-link {
+          margin-right: 5%;
+          font-size: 1.5em;
+          padding: 0 0.4rem;
+        }
+      }
+    }
+    .col-md-6 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      padding: 0 1rem;
+      width: 90% !important;
+      // border: 2px solid;
+      margin: 0 auto;
+      padding: 0.5rem 1rem;
+      .hero-intro {
+        padding: 0.8rem;
+      }
+      .hero-title {
+        font-size: 2.7em;
+      }
+      .h4 {
+        font-size: 1.3em;
+      }
+      .text {
+        font-size: 0.85em;
+        line-height: 1.3rem;
+      }
+    }
+    .col-md-4 {
+      max-width: 100% !important;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      // border: 2px solid;
+      .grid {
+        opacity: 0.5;
+        // max-width: 100%;
+        .gridBox {
+          padding: 0.3rem;
+        }
+        margin: 0;
+        .dot-point {
+          padding: 0.25rem;
+        }
+      }
     }
   }
 }
