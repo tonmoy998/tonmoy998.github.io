@@ -79,10 +79,10 @@ email.addEventListener("keydown", (e) => {
                 </div>
               </div>
         `;
-        const sendBtn = document.createElement("button");
-        sendBtn.textContent = "sendi it";
-        sendBtn.classList.add("btn-send", "bg-green");
-        terminal.append(sendBtn);
+        // const sendBtn = document.createElement("button");
+        // sendBtn.textContent = "sendi it";
+        // sendBtn.classList.add("btn-send", "bg-green");
+        // terminal.append(sendBtn);
       }
     });
   }

@@ -236,16 +236,16 @@
   .contact {
     padding: 0;
     margin: 0;
-    border: 2px solid;
+    // border: 2px solid;
+    position: relative;
     .container {
       position: relative;
-      box-sizing: border-box;
-      border: 2px solid;
+      // border: 2px solid;
       padding: 0;
       .contact-header {
         position: relative;
         width: fit-content;
-        margin-left: 1rem;
+        margin: 1rem 2rem;
         backdrop-filter: blur(40px);
         padding: 0.5rem 1rem;
         .text {
@@ -258,10 +258,12 @@
         }
       }
       .terminal-box {
-        position: absolute;
+        position: relative;
+        top: 0%;
+        left: 0%;
         width: 90%;
-        margin: 1rem auto;
-        top: 60%;
+        transform: translate(0%, 0%);
+        margin: 5rem auto;
         .terminal {
           position: relative;
           margin: 0;

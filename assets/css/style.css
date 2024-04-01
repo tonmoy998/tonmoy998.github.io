@@ -358,7 +358,7 @@
   }
   .hero .col-md-2 nav .github-link {
     margin-right: 5%;
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 0 0.4rem;
   }
   .hero .col-md-6 {
@@ -836,18 +836,16 @@ a {
   .contact {
     padding: 0;
     margin: 0;
-    border: 2px solid;
+    position: relative;
   }
   .contact .container {
     position: relative;
-    box-sizing: border-box;
-    border: 2px solid;
     padding: 0;
   }
   .contact .container .contact-header {
     position: relative;
     width: fit-content;
-    margin-left: 1rem;
+    margin: 1rem 2rem;
     backdrop-filter: blur(40px);
     padding: 0.5rem 1rem;
   }
@@ -860,10 +858,12 @@ a {
     font-size: 1.7rem;
   }
   .contact .container .terminal-box {
-    position: absolute;
+    position: relative;
+    top: 0%;
+    left: 0%;
     width: 90%;
-    margin: 1rem auto;
-    top: 60%;
+    transform: translate(0%, 0%);
+    margin: 5rem auto;
   }
   .contact .container .terminal-box .terminal {
     position: relative;
