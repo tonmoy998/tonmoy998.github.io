@@ -96,6 +96,7 @@
     // border: 2px solid indigo;
     background-color: rgb(22, 25, 60);
     width: 5rem;
+    z-index: 99999999;
     nav {
       position: relative;
       width: 100%;
@@ -161,6 +162,7 @@
       font-size: 1.8em;
     }
     .text {
+      margin-bottom: 3rem;
       max-width: 40rem;
       line-height: 1.8rem;
       font-size: 1.1em;
@@ -487,6 +489,10 @@
     }
     .squares {
       z-index: 10;
+      .square {
+        width: 0.17rem;
+        height: 0.17rem;
+      }
     }
     .col-md-2 {
       margin: 0;
@@ -529,19 +535,19 @@
     }
     .col-md-6 {
       position: absolute;
-      top: 50%;
+      top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 10;
-      padding: 0 1rem;
-      width: 90% !important;
+      padding: 0 !important;
+      width: 95% !important;
       margin: 0 auto;
-      padding: 0.5rem 1rem;
+      // border: 2px solid;
       .hero-intro {
         padding: 0.8rem;
       }
       .hero-title {
-        font-size: 2.1rem;
+        font-size: 2.3rem;
       }
       .h4 {
         font-size: 1rem;
@@ -554,6 +560,7 @@
       }
     }
     .col-md-4 {
+      height: 100%;
       max-width: 100% !important;
       position: absolute;
       top: 50%;
@@ -564,11 +571,11 @@
         opacity: 0.5;
         // max-width: 100%;
         .gridBox {
-          padding: 0.25rem;
+          padding: 0.28rem;
         }
         margin: 0;
         .dot-point {
-          padding: 0.2rem;
+          padding: 0.22rem;
         }
       }
     }

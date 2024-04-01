@@ -78,6 +78,7 @@
 .hero .col-md-2 {
   background-color: rgb(22, 25, 60);
   width: 5rem;
+  z-index: 99999999;
 }
 .hero .col-md-2 nav {
   position: relative;
@@ -140,6 +141,7 @@
   font-size: 1.8em;
 }
 .hero .col-md-6 .text {
+  margin-bottom: 3rem;
   max-width: 40rem;
   line-height: 1.8rem;
   font-size: 1.1em;
@@ -437,6 +439,10 @@
   .hero .squares {
     z-index: 10;
   }
+  .hero .squares .square {
+    width: 0.17rem;
+    height: 0.17rem;
+  }
   .hero .col-md-2 {
     margin: 0;
     overflow: hidden;
@@ -477,20 +483,19 @@
   }
   .hero .col-md-6 {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    padding: 0 1rem;
-    width: 90% !important;
+    padding: 0 !important;
+    width: 95% !important;
     margin: 0 auto;
-    padding: 0.5rem 1rem;
   }
   .hero .col-md-6 .hero-intro {
     padding: 0.8rem;
   }
   .hero .col-md-6 .hero-title {
-    font-size: 2.1rem;
+    font-size: 2.3rem;
   }
   .hero .col-md-6 .h4 {
     font-size: 1rem;
@@ -502,6 +507,7 @@
     color: rgb(212, 212, 220);
   }
   .hero .col-md-4 {
+    height: 100%;
     max-width: 100% !important;
     position: absolute;
     top: 50%;
@@ -514,10 +520,10 @@
     margin: 0;
   }
   .hero .col-md-4 .grid .gridBox {
-    padding: 0.25rem;
+    padding: 0.28rem;
   }
   .hero .col-md-4 .grid .dot-point {
-    padding: 0.2rem;
+    padding: 0.22rem;
   }
 }
 .overflow-hidden {
@@ -628,6 +634,8 @@ a {
   background-color: rgb(120, 160, 220);
   border: 0;
   outline: 0;
+  width: fit-content;
+  height: fit-content;
   border-radius: 0.4rem;
   padding: 0.9rem 1.5rem;
   color: #fff;
@@ -674,7 +682,7 @@ a {
 }
 
 .mt-2 {
-  margin-top: 2rem;
+  margin-top: 2rem !important;
 }
 
 .mt-3 {
@@ -738,8 +746,8 @@ a {
 }
 @media only screen and (max-width: 450px) {
   .btn-primary {
-    font-size: 0.69rem;
-    padding: 0.6rem 0.9rem;
+    font-size: 0.72rem;
+    padding: 0.65rem 0.95rem;
     letter-spacing: 1px;
     font-weight: 600;
     border-radius: 4px;
