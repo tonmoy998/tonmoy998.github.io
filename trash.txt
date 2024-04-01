@@ -1,0 +1,50 @@
+    background: linear-gradient(
+      230deg,
+      rgba(120, 153, 220, 100),
+      rgba(120, 153, 204, 400),
+      rgb(120, 153, 220)
+    );
+<p class="text px-1">
+                Awesome! What's
+                <span class="text-green">your name?</span>
+              </p>
+ <div class="terminal-row">
+                <div class="terminal-response">
+                  <i class="fa-solid fa-circle-check text-green"></i>
+                  <p class="text">tonmoymojumder</p>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+<p class="text px-1">
+                Perfect! How can I
+                <span class="text-green">help you?</span>
+              </p>
+
+<div class="message">
+                <div class="zsh-icons">
+                  <i class="fa-solid fa-arrow-right text-green"></i>
+                </div>
+                <div class="terminal-user-input">
+                  <p class="text">Enter description :</p>
+                  <textarea
+                    class="messageInput text-green"
+                    name="message"
+                    id="message"
+                    cols="50"
+                    rows="10"
+                  ></textarea>
+                </div>
+              </div>
+
+              <button class="btn-send">send</button>
+
